@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { store, persistor } from "./Redux/store";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import "@fontsource/montserrat";
 import { GoogleOAuthProvider } from "@react-oauth/google";
@@ -15,9 +15,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <BrowserRouter>
+          <Router>
             <App />
-          </BrowserRouter>
+          </Router>
         </PersistGate>
       </Provider>
     </React.StrictMode>

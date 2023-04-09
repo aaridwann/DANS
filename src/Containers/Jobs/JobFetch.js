@@ -1,8 +1,7 @@
-import axios from "axios";
 import { URL } from "./JobsConfig";
 import { AppAxios } from "../../Utils/Inteceptor";
 
-export const GetListJobs = async (state, setState) => {
+const GetListJobs = async (state, setState) => {
   const { page } = state;
   const urlPaginate = URL.LIST_JOBS + `?page=` + page;
 
@@ -15,7 +14,7 @@ export const GetListJobs = async (state, setState) => {
     });
 };
 
-export const findJob = async (state, setState) => {
+const findJob = async (state, setState) => {
   const { jobTitle, location, fullTime } = state;
   const description = `?description=${jobTitle}`;
   const locationParams = `&location=${location}`;
@@ -28,7 +27,7 @@ export const findJob = async (state, setState) => {
   } catch (error) {}
 };
 
-export const LoadMore = async (state, setState) => {
+const LoadMore = async (state, setState) => {
   setState((prev) => ({ ...prev, page: prev.page + 1 }));
   let { page } = state;
   const currentPage = parseInt(page) + 1;
@@ -41,3 +40,5 @@ export const LoadMore = async (state, setState) => {
     setState((prev) => ({ ...prev, error: error?.message }));
   }
 };
+
+export { LoadMore, findJob, GetListJobs };

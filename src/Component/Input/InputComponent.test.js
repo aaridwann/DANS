@@ -1,6 +1,7 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
 import InputComponent from "./InputComponent";
+import "@testing-library/jest-dom/extend-expect";
 
 describe("Input unit test", () => {
   test("Snapshot testing", () => {
@@ -25,7 +26,7 @@ describe("Input unit test", () => {
     } = render(<InputComponent {...Props} />);
     const input = getByTestId("input");
     const placeholder = getByPlaceholderText(Props.placeholder);
-    const label = getByLabelText(Props.label);
+    const label = getByText(Props.label);
     fireEvent.change(input, { target: { value: "hello test" } });
 
     expect(Props.onChange).toBeCalled()

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutComponent renders correctly 1`] = `
+<div
+  class=" w-full bg-slate-50 h-screen"
+>
+  <div>
+    LoadingComponent
+  </div>
+  <div
+    class="z-50 transition-all fixed px-4 w-full overflow-y-auto h-full"
+  >
+    <div>
+      ToastComponent
+    </div>
+    <div>
+      NavbarComponent
+    </div>
+    <div>
+      Children Component
+    </div>
+  </div>
+  <div
+    class=" w-full md:h-80 h-52 bg-gradient-to-r from-cyan-500 overflow-hidden to-blue-500 fixed top-0 items-end justify-end "
+  >
+    <div>
+      SlideShow
+    </div>
+  </div>
+</div>
+`;

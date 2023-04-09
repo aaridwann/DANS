@@ -1,7 +1,6 @@
 import React from "react";
 import WithDetailsContainer from "./DetailsContainer";
 import back from "../../assets/back.png";
-import { Navigate } from "react-router-dom";
 import { PATH_NAME } from "../../Routes/RoutesConfig";
 
 function DetailsComponent(Props) {
@@ -22,11 +21,7 @@ function DetailsComponent(Props) {
     );
   };
 
-  return (
-    // <div className="w-full h-screen relative overflow-hidden flex flex-col gap-2">
-    <_renderHero />
-    // </div>
-  );
+  return <_renderHero />
 }
 
 export default WithDetailsContainer(DetailsComponent);

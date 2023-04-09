@@ -1,6 +1,12 @@
-// module.exports = {
-//   transform: {
-//     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-//       "<rootDir>/fileTransformer.js",
-//   },
-// };
+module.exports = {
+  transform: {
+    "^.+\\.jsx?$": "babel-jest",
+  },
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  moduleNameMapper: {
+    "\\.(png|gif)$": "<rootDir>/src/__mocks__/img.js",
+    "\\.(css)$": "<rootDir>/src/__mocks__/css.js"
+  }
+};

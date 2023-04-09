@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import NavbarComponent from "../Navbar/NavbarComponent";
 import SlideShow from "../SlideShow/SlideShow";
 import LoadingComponent from "../LoadingComponent/LoadingComponent";
-import { useDispatch, useSelector } from "react-redux";
+
 import ToastComponent from "../Toast/ToastComponent";
-import { LOADING_ON } from "../../Redux/features/Loading/LoadingSlice";
-import { store } from "../../Redux/store";
 
 function LayoutComponent({ children }) {
-  
   return (
     <div className=" w-full bg-slate-50 h-screen">
       <LoadingComponent />

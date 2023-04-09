@@ -92,7 +92,7 @@ const _renderContainer = (Props) => {
   return (
     <main className="scrollbar-none w-full overflow-scroll sticky top-4 max-h-[700px] p-4 text-gray-400 font-extrabold flex flex-col">
       <_renderJobs {...Props} />
-      {buttonLoadMore()}
+      {Props.data.length !== 0 && buttonLoadMore()}
     </main>
   );
 };

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlideShow component matches snapshot 1`] = `
+<div
+  class="relative h-full"
+>
+  <div
+    class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
+  >
+    <img
+      alt="Slide 1"
+      class="w-auto drop-shadow-4xl mx-auto h-full object-cover"
+      src="mocked-image"
+    />
+  </div>
+  <div
+    class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
+  >
+    <img
+      alt="Slide 2"
+      class="w-auto drop-shadow-4xl mx-auto h-full object-cover"
+      src="mocked-image"
+    />
+  </div>
+  <div
+    class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
+  >
+    <img
+      alt="Slide 3"
+      class="w-auto drop-shadow-4xl mx-auto h-full object-cover"
+      src="mocked-image"
+    />
+  </div>
+</div>
+`;

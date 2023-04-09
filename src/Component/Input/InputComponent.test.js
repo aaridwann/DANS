@@ -35,6 +35,5 @@ describe("Input unit test", () => {
     expect(input.type).toEqual(Props.type);
     expect(input.name).toEqual(Props.name);
     expect(input.disabled).toEqual(false);
-    console.log(input);
   });
 });

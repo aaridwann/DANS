@@ -1,20 +1,17 @@
-import { Navigate, Route, Routes, createBrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
-import App from "../App";
-import LoginComponent from "../Containers/Login/LoginComponent";
-import DetailsComponent from "../Containers/DetailsJob/DetailsComponent";
-import HomeComponent from "../Containers/Home/HomeComponent";
-import JobsComponent from "../Containers/Jobs/JobsComponent";
 import { AuthWrapper } from "./RoutesWrapper";
+import { Route_map } from "./RoutesConfig";
 
 const Router = () => {
   return (
     <AuthWrapper>
       <Routes>
-        <Route path="/" element={<HomeComponent />} />
-        <Route path="/jobs" element={<JobsComponent />} />
-        <Route path="/jobs:id" element={<DetailsComponent />} />
-        <Route path="/login" element={<LoginComponent />} />
+        {Route_map.map(({ path, element }) => (
+          <React.Fragment key={path}>
+            <Route path={path} element={element} />
+          </React.Fragment>
+        ))}
       </Routes>
     </AuthWrapper>
   );

@@ -4,8 +4,7 @@ function CheckboxComponent({ title, value, onChange }) {
   return (
     <div className="flex">
       <input
-        onChange={onChange}
-        // checked={onChange}
+        onClick={onChange}
         value={value}
         type="checkbox"
         id="choose-me"

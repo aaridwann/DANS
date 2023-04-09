@@ -1,14 +1,43 @@
 import axios from "axios";
 import { URL } from "./JobsConfig";
-import Data from './Data.json'
+import { AppAxios } from "../../Utils/Inteceptor";
 
 export const GetListJobs = async (state, setState) => {
-    console.log(Data)
-    // axios.get('http://dev3.dansmultipro.co.id/api/recruitment/positions.json')
-    // .then(response => {
-    //   console.log(response.data); // memeriksa response data
-    // })
-    // .catch(error => {
-    //   console.log(error); // memeriksa error
-    // });
+  const { page } = state;
+  const urlPaginate = URL.LIST_JOBS + `?page=` + page;
+
+  AppAxios.get(urlPaginate)
+    .then((response) => {
+      setState((prev) => ({ ...prev, data: response.data }));
+    })
+    .catch((error) => {
+      setState((prev) => ({ ...prev, error: error }));
+    });
+};
+
+export const findJob = async (state, setState) => {
+  const { jobTitle, location, fullTime } = state;
+  const description = `?description=${jobTitle}`;
+  const locationParams = `&location=${location}`;
+  const fulltimeParams = `&full_time=${fullTime}`;
+  const url = URL.LIST_JOBS + description + locationParams + fulltimeParams;
+
+  try {
+    const { data } = await AppAxios.get(url);
+    setState((prev) => ({ ...prev, data: data }));
+  } catch (error) {}
+};
+
+export const LoadMore = async (state, setState) => {
+  setState((prev) => ({ ...prev, page: prev.page + 1 }));
+  let { page } = state;
+  const currentPage = parseInt(page) + 1;
+  const urlPaginate = URL.LIST_JOBS + `?page=` + currentPage;
+
+  try {
+    const { data } = await AppAxios.get(urlPaginate);
+    setState((prev) => ({ ...prev, data: [...prev.data, ...data] }));
+  } catch (error) {
+    setState((prev) => ({ ...prev, error: error?.message }));
+  }
 };

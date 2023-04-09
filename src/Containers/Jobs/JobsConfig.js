@@ -1,13 +1,13 @@
-import Data from "./Data.json";
+// CONFIG IN JOBS CONTAINER
 
 export const initialStateJob = {
-  data: Data,
+  data: [],
   fullTime: false,
-  jobTitle: "programmer",
+  jobTitle: "",
   location: "",
-  page: 0,
+  page: 1,
 };
 
 export const URL = {
-  LIST_JOBS: "http://dev3.dansmultipro.co.id/api/recruitment/positions.json",
+  LIST_JOBS: "http://dev3.dansmultipro.co.id/api/recruitment/positions.json/",
 };

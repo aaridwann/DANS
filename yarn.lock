@@ -956,7 +956,7 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/@babel/regjsgen/-/regjsgen-0.8.0.tgz"
   "version" "0.8.0"
 
-"@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   "integrity" "sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/@babel/runtime/-/runtime-7.21.0.tgz"
   "version" "7.21.0"
@@ -1311,6 +1311,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@juggle/resize-observer@^3.2.0":
+  "integrity" "sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
+  "version" "3.4.0"
+
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -1331,6 +1336,28 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
+
+"@reach/portal@^0.13.0":
+  "integrity" "sha512-g74BnCdtuTGthzzHn2cWW+bcyIYb0iIE/yRsm89i8oNzNgpopbkh9UY8TPbhNlys52h7U60s4kpRTmcq+JqsTA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/@reach/portal/-/portal-0.13.2.tgz"
+  "version" "0.13.2"
+  dependencies:
+    "@reach/utils" "0.13.2"
+    "tslib" "^2.1.0"
+
+"@reach/utils@0.13.2":
+  "integrity" "sha512-3ir6cN60zvUrwjOJu7C6jec/samqAeyAB12ZADK+qjnmQPdzSYldrFWwDVV5H0WkhbYXR3uh+eImu13hCetNPQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/@reach/utils/-/utils-0.13.2.tgz"
+  "version" "0.13.2"
+  dependencies:
+    "@types/warning" "^3.0.0"
+    "tslib" "^2.1.0"
+    "warning" "^4.0.3"
+
+"@react-oauth/google@^0.9.0":
+  "integrity" "sha512-iq9I6A4uwZezU/BixqLM6UET6an559ufC4Nh0lEIeIaKC3TJRvcPNWCjjHny56yAhgdT6ivUicLIvEoiSMjnmg=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/@react-oauth/google/-/google-0.9.0.tgz"
+  "version" "0.9.0"
 
 "@reduxjs/toolkit@^1.9.3":
   "integrity" "sha512-GU2TNBQVofL09VGmuSioNPQIu6Ml0YLf4EJhgj0AvBadRlCGzUWet8372LjvO4fqKZF2vH1xU0htAa7BrK9pZg=="
@@ -1512,6 +1539,11 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz"
   "version" "0.0.3"
 
+"@types/warning@^3.0.0":
+  "integrity" "sha512-t/Tvs5qR47OLOr+4E9ckN8AmP2Tf16gWq+/qA4iUGS/OOyHVO8wv2vjJuX8SNOUTJyWb+2t7wJm6cXILFnOROA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/@types/warning/-/warning-3.0.0.tgz"
+  "version" "3.0.0"
+
 "@types/yargs-parser@*":
   "integrity" "sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/@types/yargs-parser/-/yargs-parser-21.0.0.tgz"
@@ -1534,6 +1566,14 @@
     "@babel/plugin-transform-react-jsx-source" "^7.19.6"
     "magic-string" "^0.27.0"
     "react-refresh" "^0.14.0"
+
+"@xstate/react@^1.2.0":
+  "integrity" "sha512-NCUReRHPGvvCvj2yLZUTfR0qVp6+apc8G83oXSjN4rl89ZjyujiKrTff55bze/HrsvCsP/sUJASf2n0nzMF1KQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/@xstate/react/-/react-1.6.3.tgz"
+  "version" "1.6.3"
+  dependencies:
+    "use-isomorphic-layout-effect" "^1.0.0"
+    "use-subscription" "^1.3.0"
 
 "acorn-jsx@^5.3.2":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
@@ -1805,6 +1845,11 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/binary-extensions/-/binary-extensions-2.2.0.tgz"
   "version" "2.2.0"
 
+"body-scroll-lock@^3.1.5":
+  "integrity" "sha512-Yi1Xaml0EvNA0OYWxXiYNqY24AfWkbA6w5vxE7GWxtKfzIbZM+Qw+aSmkgsbWzbHiy/RCSkUZBplVxTA+E4jJg=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/body-scroll-lock/-/body-scroll-lock-3.1.5.tgz"
+  "version" "3.1.5"
+
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -1945,6 +1990,11 @@
     "string-width" "^4.2.0"
     "strip-ansi" "^6.0.1"
     "wrap-ansi" "^7.0.0"
+
+"clsx@^1.1.1":
+  "integrity" "sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/clsx/-/clsx-1.2.1.tgz"
+  "version" "1.2.1"
 
 "co@^4.6.0":
   "integrity" "sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ=="
@@ -2625,6 +2675,13 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/flatted/-/flatted-3.2.7.tgz"
   "version" "3.2.7"
 
+"focus-trap@^6.2.2":
+  "integrity" "sha512-v2NTsZe2FF59Y+sDykKY+XjqZ0cPfhq/hikWVL88BqLivnNiEffAsac6rP6H45ff9wG9LL5ToiDqrLEP9GX9mw=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/focus-trap/-/focus-trap-6.9.4.tgz"
+  "version" "6.9.4"
+  dependencies:
+    "tabbable" "^5.3.3"
+
 "follow-redirects@^1.15.0":
   "integrity" "sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/follow-redirects/-/follow-redirects-1.15.2.tgz"
@@ -3069,6 +3126,11 @@
     "for-each" "^0.3.3"
     "gopd" "^1.0.1"
     "has-tostringtag" "^1.0.0"
+
+"is-url-superb@^4.0.0":
+  "integrity" "sha512-GI+WjezhPPcbM+tqE9LnmsY5qqjwHzTvjJ36wxYX5ujNXefSUJ/T17r5bqDV8yLhcgB59KTPNOc9O9cmHTPWsA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/is-url-superb/-/is-url-superb-4.0.0.tgz"
+  "version" "4.0.0"
 
 "is-weakmap@^2.0.1":
   "integrity" "sha512-NSBR4kH5oVj1Uwvv970ruUkCV7O1mzgVFO4/rev2cLRda9Tm9HrL70ZPut4rOHgY0FNrUu9BCbXA2sdQ+x0chA=="
@@ -3644,7 +3706,7 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/lodash.merge/-/lodash.merge-4.6.2.tgz"
   "version" "4.6.2"
 
-"loose-envify@^1.1.0", "loose-envify@^1.4.0":
+"loose-envify@^1.0.0", "loose-envify@^1.1.0", "loose-envify@^1.4.0":
   "integrity" "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/loose-envify/-/loose-envify-1.4.0.tgz"
   "version" "1.4.0"
@@ -3998,6 +4060,14 @@
   dependencies:
     "find-up" "^4.0.0"
 
+"postcss-custom-properties-fallback@^1.0.2":
+  "integrity" "sha512-UrPr99bo03c1iX4iqjBBYo3W+EsXfxrozp2LNvRN34Y95n/7R2RupcMhGlc+C/RQxknDXiP+bptyhmb8nFYzeQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/postcss-custom-properties-fallback/-/postcss-custom-properties-fallback-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "postcss-value-parser" "^4.2.0"
+    "postcss-values-parser" "^6.0.2"
+
 "postcss-import@^14.1.0":
   "integrity" "sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/postcss-import/-/postcss-import-14.1.0.tgz"
@@ -4042,7 +4112,16 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^8.0.0", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.4.21", "postcss@>=8.0.9":
+"postcss-values-parser@^6.0.2":
+  "integrity" "sha512-YLJpK0N1brcNJrs9WatuJFtHaV9q5aAOj+S4DI5S7jgHlRfm0PIbDCAFRYMQD5SHq7Fy6xsDhyutgS0QOAs0qw=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/postcss-values-parser/-/postcss-values-parser-6.0.2.tgz"
+  "version" "6.0.2"
+  dependencies:
+    "color-name" "^1.1.4"
+    "is-url-superb" "^4.0.0"
+    "quote-unquote" "^1.0.0"
+
+"postcss@^8.0.0", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.2.9", "postcss@^8.4.21", "postcss@>=8.0.9":
   "integrity" "sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/postcss/-/postcss-8.4.21.tgz"
   "version" "8.4.21"
@@ -4082,7 +4161,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.8.1":
+"prop-types@^15.5.8", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -4116,7 +4195,12 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8":
+"quote-unquote@^1.0.0":
+  "integrity" "sha512-twwRO/ilhlG/FIgYeKGFqyHhoEhqgnKVkcmqMKi2r524gz3ZbDTcyFt38E9xjJI2vT+KbRNHVbnJ/e0I25Azwg=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/quote-unquote/-/quote-unquote-1.0.0.tgz"
+  "version" "1.0.0"
+
+"react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16", "react-dom@>=16.8", "react-dom@>=16.8.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -4124,10 +4208,33 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
+"react-dom@^16.8.0 || 17.x":
+  "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-dom/-/react-dom-17.0.2.tgz"
+  "version" "17.0.2"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
+    "scheduler" "^0.20.2"
+
 "react-icons@^4.8.0":
   "integrity" "sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-icons/-/react-icons-4.8.0.tgz"
   "version" "4.8.0"
+
+"react-infinite-scroll-component@^6.1.0":
+  "integrity" "sha512-SQu5nCqy8DxQWpnUVLx7V7b7LcA37aM7tvoWjTLZp1dk6EJibM5/4EJKzOnl07/BsM1Y40sKLuqjCwwH/xV0TQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-infinite-scroll-component/-/react-infinite-scroll-component-6.1.0.tgz"
+  "version" "6.1.0"
+  dependencies:
+    "throttle-debounce" "^2.1.0"
+
+"react-infinite-scroller@^1.2.6":
+  "integrity" "sha512-mGdMyOD00YArJ1S1F3TVU9y4fGSfVVl6p5gh/Vt4u99CJOptfVu/q5V/Wlle72TMgYlBwIhbxK5wF0C/R33PXQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-infinite-scroller/-/react-infinite-scroller-1.2.6.tgz"
+  "version" "1.2.6"
+  dependencies:
+    "prop-types" "^15.5.8"
 
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", "react-is@^16.13.1", "react-is@^16.7.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -4189,6 +4296,28 @@
     "object-assign" "^4.1.1"
     "react-is" "^16.12.0 || ^17.0.0 || ^18.0.0"
 
+"react-spring-bottom-sheet@^3.4.1":
+  "integrity" "sha512-yDFqiPMm/fjefjnOe6Q9zxccbCl6HMUKsK5bWgfGHJIj4zmXVKio5d4icQvmOLuwpuCA2pwv4J6nGWS6fUZidQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-spring-bottom-sheet/-/react-spring-bottom-sheet-3.4.1.tgz"
+  "version" "3.4.1"
+  dependencies:
+    "@juggle/resize-observer" "^3.2.0"
+    "@reach/portal" "^0.13.0"
+    "@xstate/react" "^1.2.0"
+    "body-scroll-lock" "^3.1.5"
+    "focus-trap" "^6.2.2"
+    "react-spring" "^8.0.27"
+    "react-use-gesture" "^8.0.1"
+    "xstate" "^4.15.1"
+
+"react-spring@^8.0.27":
+  "integrity" "sha512-nDpWBe3ZVezukNRandTeLSPcwwTMjNVu1IDq9qA/AMiUqHuRN4BeSWvKr3eIxxg1vtiYiOLy4FqdfCP5IoP77g=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-spring/-/react-spring-8.0.27.tgz"
+  "version" "8.0.27"
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "prop-types" "^15.5.8"
+
 "react-test-renderer@^18.2.0":
   "integrity" "sha512-JWD+aQ0lh2gvh4NM3bBM42Kx+XybOxCpgYK7F8ugAlpaTSnWsX+39Z4XkOykGZAHrjwwTZT3x3KxswVWxHPUqA=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-test-renderer/-/react-test-renderer-18.2.0.tgz"
@@ -4198,7 +4327,19 @@
     "react-shallow-renderer" "^16.15.0"
     "scheduler" "^0.23.0"
 
-"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^18.0.0", "react@^18.2.0", "react@>=16.8":
+"react-toastify@^9.1.2":
+  "integrity" "sha512-PBfzXO5jMGEtdYR5jxrORlNZZe/EuOkwvwKijMatsZZm8IZwLj01YvobeJYNjFcA6uy6CVrx2fzL9GWbhWPTDA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-toastify/-/react-toastify-9.1.2.tgz"
+  "version" "9.1.2"
+  dependencies:
+    "clsx" "^1.1.1"
+
+"react-use-gesture@^8.0.1":
+  "integrity" "sha512-CXzUNkulUdgouaAlvAsC5ZVo0fi9KGSBSk81WrE4kOIcJccpANe9zZkAYr5YZZhqpicIFxitsrGVS4wmoMun9A=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/react-use-gesture/-/react-use-gesture-8.0.1.tgz"
+  "version" "8.0.1"
+
+"react@*", "react@^0.14.9 || ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || 17 || 18", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || 17.x", "react@^16.9.0 || ^17.0.0 || ^18", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>=16", "react@>=16.0.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.2":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -4219,12 +4360,17 @@
   dependencies:
     "picomatch" "^2.2.1"
 
+"redux-persist@^6.0.0":
+  "integrity" "sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/redux-persist/-/redux-persist-6.0.0.tgz"
+  "version" "6.0.0"
+
 "redux-thunk@^2.4.2":
   "integrity" "sha512-+P3TjtnP0k/FEjcBL5FZpoovtvrTNT/UXd4/sluaSyrURlSlhLSzEdfsTBW7WsKB6yPvgd7q/iZPICFjW4o57Q=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/redux-thunk/-/redux-thunk-2.4.2.tgz"
   "version" "2.4.2"
 
-"redux@^4", "redux@^4.2.0":
+"redux@^4", "redux@^4.2.0", "redux@>4.0.0":
   "integrity" "sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/redux/-/redux-4.2.1.tgz"
   "version" "4.2.1"
@@ -4377,6 +4523,14 @@
     "call-bind" "^1.0.2"
     "get-intrinsic" "^1.1.3"
     "is-regex" "^1.1.4"
+
+"scheduler@^0.20.2":
+  "integrity" "sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/scheduler/-/scheduler-0.20.2.tgz"
+  "version" "0.20.2"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
 
 "scheduler@^0.23.0":
   "integrity" "sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw=="
@@ -4614,7 +4768,17 @@
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
-"tailwindcss@^3.3.1":
+"tabbable@^5.3.3":
+  "integrity" "sha512-QD9qKY3StfbZqWOPLp0++pOrAVb/HbUi5xCc8cUo4XjP19808oaMiDzn0leBY5mCespIBM0CIZePzZjgzR83kA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/tabbable/-/tabbable-5.3.3.tgz"
+  "version" "5.3.3"
+
+"tailwind-scrollbar@^3.0.0":
+  "integrity" "sha512-OkVRX9Q1T769vk979UZ519jhj/j/zNBHql7zPLI+tlhX+ahksYO4ZryWD29lOETDx9Wj1sw+K1OeW7W3+ECQOA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/tailwind-scrollbar/-/tailwind-scrollbar-3.0.0.tgz"
+  "version" "3.0.0"
+
+"tailwindcss@^3.3.1", "tailwindcss@3.x":
   "integrity" "sha512-Vkiouc41d4CEq0ujXl6oiGFQ7bA3WEhUZdTgXAhtKxSy49OmKs8rEfQmupsfF0IGW8fv2iQkp1EVUuapCFrZ9g=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/tailwindcss/-/tailwindcss-3.3.1.tgz"
   "version" "3.3.1"
@@ -4672,6 +4836,11 @@
   dependencies:
     "any-promise" "^1.0.0"
 
+"throttle-debounce@^2.1.0":
+  "integrity" "sha512-H7oLPV0P7+jgvrk+6mwwwBDmxTaxnu9HMXmloNLXwnNO0ZxZ31Orah2n8lU1eMPvsaowP2CX+USCgyovXfdOFQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/throttle-debounce/-/throttle-debounce-2.3.0.tgz"
+  "version" "2.3.0"
+
 "tmpl@1.0.5":
   "integrity" "sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/tmpl/-/tmpl-1.0.5.tgz"
@@ -4703,6 +4872,11 @@
     "json5" "^1.0.2"
     "minimist" "^1.2.6"
     "strip-bom" "^3.0.0"
+
+"tslib@^2.1.0":
+  "integrity" "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/tslib/-/tslib-2.5.0.tgz"
+  "version" "2.5.0"
 
 "type-check@^0.4.0", "type-check@~0.4.0":
   "integrity" "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew=="
@@ -4783,7 +4957,19 @@
   dependencies:
     "punycode" "^2.1.0"
 
-"use-sync-external-store@^1.0.0":
+"use-isomorphic-layout-effect@^1.0.0":
+  "integrity" "sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.1.2.tgz"
+  "version" "1.1.2"
+
+"use-subscription@^1.3.0":
+  "integrity" "sha512-LISuG0/TmmoDoCRmV5XAqYkd3UCBNM0ML3gGBndze65WITcsExCD3DTvXXTLyNcOC0heFQZzluW88bN/oC1DQQ=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/use-subscription/-/use-subscription-1.8.0.tgz"
+  "version" "1.8.0"
+  dependencies:
+    "use-sync-external-store" "^1.2.0"
+
+"use-sync-external-store@^1.0.0", "use-sync-external-store@^1.2.0":
   "integrity" "sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA=="
   "resolved" "https://nxrm.jenius.tech/repository/npm-group/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
   "version" "1.2.0"
@@ -4820,6 +5006,13 @@
   "version" "1.0.8"
   dependencies:
     "makeerror" "1.0.12"
+
+"warning@^4.0.3":
+  "integrity" "sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/warning/-/warning-4.0.3.tgz"
+  "version" "4.0.3"
+  dependencies:
+    "loose-envify" "^1.0.0"
 
 "which-boxed-primitive@^1.0.2":
   "integrity" "sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg=="
@@ -4887,6 +5080,11 @@
   dependencies:
     "imurmurhash" "^0.1.4"
     "signal-exit" "^3.0.7"
+
+"xstate@^4.11.0", "xstate@^4.15.1":
+  "integrity" "sha512-MuB7s01nV5vG2CzaBg2msXLGz7JuS+x/NBkQuZAwgEYCnWA8iQMiRz2VGxD3pcFjZAOih3fOgDD3kDaFInEx+g=="
+  "resolved" "https://nxrm.jenius.tech/repository/npm-group/xstate/-/xstate-4.37.1.tgz"
+  "version" "4.37.1"
 
 "y18n@^5.0.5":
   "integrity" "sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA=="

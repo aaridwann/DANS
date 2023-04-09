@@ -5,7 +5,11 @@ export const AuthSlice = createSlice({
   name: "Auth",
   initialState: initialValue,
   reducers: {
-    LOGIN_ACTION: () => ({ isLogin: true }),
+    LOGIN_ACTION: (state, { payload }) => ({
+      ...state,
+      isLogin: true,
+      ...payload,
+    }),
     LOGOUT_ACTION: () => ({ isLogin: false }),
   },
 });
